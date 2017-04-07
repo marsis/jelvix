@@ -13,9 +13,9 @@ export const appRoutes: Routes = [
     path: '', redirectTo: '/users', pathMatch: 'full'
   },
   {
-    path: 'posts', component: PostsComponent },
+    path: 'posts/:userId', component: PostsComponent },
   {
-    path: 'comments', component: CommentsComponent }
+    path: 'comments/:postId', component: CommentsComponent }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(appRoutes);

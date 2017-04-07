@@ -1,0 +1,5 @@
+<div class="class table__item" [routerLink]="'/posts/'+ user.id" (click)="setUserId(user.id)">
+  <p>{{user.username}}</p>
+  <p><span>email:</span>{{user.email}}</p>
+  <p><span>company:</span>{{user.company.name}}</p>
+</div>

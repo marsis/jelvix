@@ -9,13 +9,15 @@ import { UsersService } from './users.service';
 import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
 import { routes } from './routes';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     PostsComponent,
-    CommentsComponent
+    CommentsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

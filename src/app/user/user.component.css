@@ -1,0 +1,10 @@
+.table__item {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  background-color: #F5F5F5;
+  border: 1px solid #DCDCDC;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px;
+}

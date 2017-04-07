@@ -12,8 +12,19 @@ export class UsersService {
   }
 
   getUsers(){
-    return this._http.get('http://jsonplaceholder.typicode.com/users');
+    return this._http.get('https://jsonplaceholder.typicode.com/users');
 
   }
 
+  getPosts(id){
+    return this._http.get('https://jsonplaceholder.typicode.com/posts?userId=' + id);
+  }
+
+ /* getUserId(userId){
+    return userId;
+  }
+
+  getUserId(){
+
+  }*/
 }
