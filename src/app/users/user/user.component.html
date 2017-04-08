@@ -1,5 +1,5 @@
 <div class="class table__item" [routerLink]="'/users/'+ user.id + '/posts'">
-  <p>{{user.username}}</p>
-  <p><span>email:</span>{{user.email}}</p>
-  <p><span>company:</span>{{user.company.name}}</p>
+  <strong>{{user.username}}</strong>
+  <p><span>email:&nbsp;</span><a href="mailto:user.email">{{user.email}}</a></p>
+  <p><span>company:&nbsp;</span>{{user.company.name}}</p>
 </div>

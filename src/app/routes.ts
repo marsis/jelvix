@@ -20,37 +20,3 @@ export const appRoutes: Routes = [
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(appRoutes);
 
-
-
-/*
-
-{
-  path: 'courses/:courseId', component: CourseComponent,
-  children: [
-  {
-    path: '', redirectTo: 'course-statistic', pathMatch: 'full'
-  },
-  {
-    path: 'course-statistic', component: CourseStatisticComponent,
-    canActivate: [ CourseTabRouteService ],
-  },
-  {
-    path: 'course-description', component: CourseDescriptionComponent
-  },
-  {
-    path: 'course-settings', component: CourseSettingsComponent
-  },
-  {
-    path: 'course-reviews', component: CourseReviewsComponent,
-    canActivate: [ CourseTabRouteService ],
-  },
-  {
-    path: 'course-flags', component: CourseFlagsComponent,
-    canActivate: [ CourseTabRouteService ],
-  },
-  {
-    path: 'course-annotations', component: CourseAnnotationsComponent
-  }
-
-]
-}*/

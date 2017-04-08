@@ -1,4 +1,4 @@
-table {
+.table {
   text-align: center;
 }
 
@@ -6,7 +6,6 @@ table {
   display: block;
   width: 50%;
 }
-
 
 .table__item {
   display: inline-block;

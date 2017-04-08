@@ -1,9 +1,9 @@
 
-<h2>Comments</h2>
+<h3>Comments on <strong>{{post[0]?.title}}</strong></h3>
 <div class="table" *ngFor="let comment of comments">
 <div class="class table__item">
-  <p>{{comment.name}}</p>
+  <p><strong>{{comment.name}}</strong></p>
   <p>{{comment.body}}</p>
-  <p>{{comment.email}}</p>
+  <p><a href="mailto:comment.email">&nbsp;{{comment.email}}</a></p>
 </div>
 </div>

@@ -1,4 +1,6 @@
-<h2>Posts</h2>
+<h3>Posts from <strong>{{user[0]?.username}}</strong><a href="mailto:user[0].email">&nbsp;{{user[0]?.email}}</a></h3>
+
+
 <div class="table" *ngFor="let post of posts">
   <app-post [post]="post"></app-post>
 </div>
