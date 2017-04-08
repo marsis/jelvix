@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from '../users.service';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-comments',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _userService: UsersService,
+    private _route: ActivatedRoute
+  ) { }
 
+  public comments: any = [];
   ngOnInit() {
+    this._route.params
+      .switchMap((params: Params) => this._userService.getComments(+params['postId']))
+      .subscribe(comments => this.comments = comments.json() );
   }
-
 }

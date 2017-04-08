@@ -1,13 +1,3 @@
-table {
-  text-align: center;
-}
-
-.table h2 {
-  display: block;
-  width: 50%;
-}
-
-
 .table__item {
   display: inline-block;
   text-align: left;

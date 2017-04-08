@@ -9,7 +9,9 @@ import { UsersService } from './users.service';
 import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
 import { routes } from './routes';
-import { UserComponent } from './user/user.component';
+import { UserComponent } from './users/user/user.component';
+import { PostComponent } from './posts/post/post.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { UserComponent } from './user/user.component';
     UsersComponent,
     PostsComponent,
     CommentsComponent,
-    UserComponent
+    UserComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
